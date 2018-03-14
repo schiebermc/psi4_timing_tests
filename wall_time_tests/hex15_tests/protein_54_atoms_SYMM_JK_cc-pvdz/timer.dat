@@ -1,0 +1,64 @@
+
+Host: hex15
+
+Timers On : Thu Mar  1 17:05:21 2018
+Timers Off: Thu Mar  1 17:06:33 2018
+
+Wall Time:       72.26 seconds
+
+DFH: initialize()           :     90.033u      0.983s     15.340w      1 calls
+DFH: sparsity prep          :      3.317u      0.117s      1.184w      1 calls
+DFH: AO Construction        :     28.967u      0.150s      2.910w      1 calls
+DFH: AO-Met. Contraction    :     43.817u      0.467s      4.542w      1 calls
+HF: Form H                  :      0.233u      0.000s      0.034w      1 calls
+HF: Form S/X                :      1.283u      0.050s      0.132w      1 calls
+HF: Guess                   :      5.283u      0.133s      0.542w      1 calls
+SAD Guess                   :      5.267u      0.133s      0.538w      1 calls
+HF: Form G                  :    161.767u      3.183s     50.581w     13 calls
+JK: D                       :      0.217u      0.000s      0.021w     13 calls
+JK: USO2AO                  :      0.017u      0.000s      0.004w     13 calls
+JK: JK                      :    161.433u      3.183s     50.545w     13 calls
+DFH: compute_JK()           :    161.433u      3.183s     50.545w     13 calls
+DFH: Grabbing AOs           :      0.000u      0.000s      0.000w     13 calls
+DFH: compute_J              :     10.467u      0.100s      1.054w     13 calls
+DFH: compute_K              :    145.217u      3.017s     48.809w     13 calls
+JK: AO2USO                  :      0.000u      0.000s      0.000w     13 calls
+HF: Form F                  :      0.017u      0.000s      0.005w     13 calls
+HF: DIIS                    :      4.233u      0.250s      0.445w     13 calls
+DIISManager::add_entry      :      0.233u      0.033s      0.029w     12 calls
+DIISManager::extrapolate    :      0.650u      0.100s      0.074w     11 calls
+bMatrix setup               :      0.317u      0.083s      0.035w     11 calls
+bMatrix pseudoinverse       :      0.000u      0.000s      0.001w     11 calls
+New vector                  :      0.333u      0.017s      0.038w     11 calls
+HF: Form C                  :     10.450u      0.217s      1.071w     13 calls
+HF: Form D                  :      0.217u      0.017s      0.019w     13 calls
+
+-----------------------------------------------------------
+DFH: initialize()           :     90.033u      0.983s     15.340w      1 calls
+| DFH: sparsity prep        :      3.317u      0.117s      1.184w      1 calls
+| DFH: AO Construction      :     28.967u      0.150s      2.910w      1 calls
+| DFH: AO-Met. Contraction  :     43.817u      0.467s      4.542w      1 calls
+HF: Form H                  :      0.233u      0.000s      0.034w      1 calls
+HF: Form S/X                :      1.283u      0.050s      0.132w      1 calls
+HF: Guess                   :      5.283u      0.133s      0.542w      1 calls
+| SAD Guess                 :      5.267u      0.133s      0.538w      1 calls
+HF: Form G                  :    161.767u      3.183s     50.581w     13 calls
+| JK: D                     :      0.217u      0.000s      0.021w     13 calls
+| JK: USO2AO                :      0.017u      0.000s      0.004w     13 calls
+| JK: JK                    :    161.433u      3.183s     50.545w     13 calls
+| | DFH: compute_JK()       :    161.433u      3.183s     50.545w     13 calls
+| | | DFH: Grabbing AOs     :      0.000u      0.000s      0.000w     13 calls
+| | | DFH: compute_J        :     10.467u      0.100s      1.054w     13 calls
+| | | DFH: compute_K        :    145.217u      3.017s     48.809w     13 calls
+| JK: AO2USO                :      0.000u      0.000s      0.000w     13 calls
+HF: Form F                  :      0.017u      0.000s      0.005w     13 calls
+HF: DIIS                    :      4.233u      0.250s      0.445w     13 calls
+| DIISManager::add_entry    :      0.233u      0.033s      0.029w     12 calls
+| DIISManager::extrapolate  :      0.650u      0.100s      0.074w     11 calls
+| | bMatrix setup           :      0.317u      0.083s      0.035w     11 calls
+| | bMatrix pseudoinverse   :      0.000u      0.000s      0.001w     11 calls
+| | New vector              :      0.333u      0.017s      0.038w     11 calls
+HF: Form C                  :     10.450u      0.217s      1.071w     13 calls
+HF: Form D                  :      0.217u      0.017s      0.019w     13 calls
+
+***********************************************************

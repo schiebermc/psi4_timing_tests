@@ -1,0 +1,70 @@
+
+Host: hex15
+
+Timers On : Fri Mar  9 17:38:53 2018
+Timers Off: Sun Mar 11 01:37:19 2018
+
+Wall Time:   115106.19 seconds
+
+JK: (A|Q)^-1                :   1695.483u    674.750s   1208.644w      1 calls
+JK: (A|mn)                  :   5046.717u      0.667s    504.439w     15 calls
+JK: (Q|mn)                  :  57496.333u     21.867s  33630.289w     15 calls
+JK: (Q|mn) Write            :     13.533u    973.717s   4095.833w     15 calls
+HF: Form H                  :      2.700u      0.783s      5.892w      1 calls
+HF: Form S/X                :    225.433u      0.783s    132.153w      1 calls
+HF: Guess                   :     45.767u      0.533s     21.889w      1 calls
+SAD Guess                   :     44.917u      0.450s     21.715w      1 calls
+HF: Form G                  : 160855.617u   8490.933s  72840.217w     13 calls
+JK: D                       :     26.550u      0.683s      5.328w     13 calls
+JK: USO2AO                  :      0.950u      0.100s      0.638w     13 calls
+JK: JK                      : 160815.200u   8489.983s  72832.929w     13 calls
+JK: (Q|mn) Read             :    136.650u   8340.433s  15527.446w    250 calls
+JK: J                       :   4984.900u      5.400s    516.982w    250 calls
+JK: J1                      :   2123.317u      1.267s    213.156w    250 calls
+JK: J2                      :   2720.250u      1.183s    273.918w    250 calls
+JK: K                       : 155644.567u     57.650s  56719.905w    250 calls
+JK: K1                      :  72616.600u      0.000s   7255.211w    250 calls
+JK: K2                      :  82827.233u      9.700s  49430.353w    250 calls
+JK: AO2USO                  :      0.000u      0.000s      0.000w     13 calls
+HF: Form F                  :      6.933u      0.050s      0.704w     13 calls
+HF: DIIS                    :   1239.683u     44.017s    681.550w     13 calls
+DIISManager::add_entry      :     33.000u      7.717s      5.137w     12 calls
+DIISManager::extrapolate    :     94.717u     31.967s     35.170w     11 calls
+bMatrix setup               :     69.933u     20.500s     19.581w     11 calls
+bMatrix pseudoinverse       :      0.033u      0.000s      0.001w     11 calls
+New vector                  :     24.750u     11.467s     15.588w     11 calls
+HF: Form C                  :   3052.600u      2.167s   1814.346w     13 calls
+HF: Form D                  :      7.617u      0.000s      4.602w     13 calls
+
+-----------------------------------------------------------
+JK: (A|Q)^-1                :   1695.483u    674.750s   1208.644w      1 calls
+JK: (A|mn)                  :   5046.717u      0.667s    504.439w     15 calls
+JK: (Q|mn)                  :  57496.333u     21.867s  33630.289w     15 calls
+JK: (Q|mn) Write            :     13.533u    973.717s   4095.833w     15 calls
+HF: Form H                  :      2.700u      0.783s      5.892w      1 calls
+HF: Form S/X                :    225.433u      0.783s    132.153w      1 calls
+HF: Guess                   :     45.767u      0.533s     21.889w      1 calls
+| SAD Guess                 :     44.917u      0.450s     21.715w      1 calls
+HF: Form G                  : 160855.617u   8490.933s  72840.217w     13 calls
+| JK: D                     :     26.550u      0.683s      5.328w     13 calls
+| JK: USO2AO                :      0.950u      0.100s      0.638w     13 calls
+| JK: JK                    : 160815.200u   8489.983s  72832.929w     13 calls
+| | JK: (Q|mn) Read         :    136.650u   8340.433s  15527.446w    250 calls
+| | JK: J                   :   4984.900u      5.400s    516.982w    250 calls
+| | | JK: J1                :   2123.317u      1.267s    213.156w    250 calls
+| | | JK: J2                :   2720.250u      1.183s    273.918w    250 calls
+| | JK: K                   : 155644.567u     57.650s  56719.905w    250 calls
+| | | JK: K1                :  72616.600u      0.000s   7255.211w    250 calls
+| | | JK: K2                :  82827.233u      9.700s  49430.353w    250 calls
+| JK: AO2USO                :      0.000u      0.000s      0.000w     13 calls
+HF: Form F                  :      6.933u      0.050s      0.704w     13 calls
+HF: DIIS                    :   1239.683u     44.017s    681.550w     13 calls
+| DIISManager::add_entry    :     33.000u      7.717s      5.137w     12 calls
+| DIISManager::extrapolate  :     94.717u     31.967s     35.170w     11 calls
+| | bMatrix setup           :     69.933u     20.500s     19.581w     11 calls
+| | bMatrix pseudoinverse   :      0.033u      0.000s      0.001w     11 calls
+| | New vector              :     24.750u     11.467s     15.588w     11 calls
+HF: Form C                  :   3052.600u      2.167s   1814.346w     13 calls
+HF: Form D                  :      7.617u      0.000s      4.602w     13 calls
+
+***********************************************************

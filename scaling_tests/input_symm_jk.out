@@ -1,0 +1,217 @@
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.2a1.dev947 
+
+                         Git: Rev {symm_JK} a726cdf dirty
+
+
+    R. M. Parrish, L. A. Burns, D. G. A. Smith, A. C. Simmonett,
+    A. E. DePrince III, E. G. Hohenstein, U. Bozkaya, A. Yu. Sokolov,
+    R. Di Remigio, R. M. Richard, J. F. Gonthier, A. M. James,
+    H. R. McAlexander, A. Kumar, M. Saitow, X. Wang, B. P. Pritchard,
+    P. Verma, H. F. Schaefer III, K. Patkowski, R. A. King, E. F. Valeev,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, and C. D. Sherrill,
+    J. Chem. Theory Comput. 13(7) pp 3185--3197 (2017).
+    (doi: 10.1021/acs.jctc.7b00174)
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Wednesday, 14 March 2018 12:20PM
+
+    Process ID:  22931
+    PSIDATADIR: /theoryfs2/ds/schieber/Gits/mspsi4/objdir/stage/usr/local/psi4/share/psi4
+    Memory:     500.0 MiB
+    Threads:    64
+    
+  ==> Input File <==
+
+--------------------------------------------------------------------------
+import psi4
+
+molecule protein_39 {
+0 1
+ N   18.626  30.444   6.627
+ C   17.853  29.516   5.837
+ C   16.945  30.292   4.886
+ O   15.843  30.678   5.237
+ C   17.047  28.642   6.811
+ C   16.316  27.513   6.146
+ O   16.236  27.458   4.905
+ O   15.762  26.696   6.882
+ N   17.407  27.054  -1.437
+ C   17.227  26.751  -0.026
+ C   18.555  26.446   0.653
+ O   19.003  25.309   0.692
+ C   16.258  25.572   0.084
+ C   15.759  25.336   1.493
+ O   16.399  25.780   2.453
+ O   14.731  24.675   1.645
+ N   19.106  26.199   3.688
+ C   18.957  25.372   4.876
+ C   18.845  23.903   4.520
+ O   18.660  23.054   5.417
+ H   18.180  30.990   7.295
+ H   18.510  28.835   5.249
+ H   16.336  29.276   7.377
+ H   17.778  28.186   7.516
+ H   15.845  26.702   7.843
+ H   17.860  26.421  -2.023
+ H   16.724  27.595   0.500
+ H   16.724  24.663  -0.337
+ H   15.363  25.845  -0.519
+ H   16.737  25.171   3.109
+ H   18.314  26.771   3.377
+ H   18.015  25.631   5.391
+ H   19.792  25.567   5.577
+ H   19.646  30.419   6.619
+ H   17.295  30.415   3.850
+ H   16.947  27.858  -1.864
+ H   19.060  27.284   1.155
+ H   20.034  26.347   3.290
+ H   18.824  23.654   3.449
+}
+
+memory 60 Gb
+
+set {
+basis aug-cc-pvtz
+scf_type df
+guess sad
+DF_SCF_TYPE symm_jk
+}
+
+print(energy('HF'))
+
+
+--------------------------------------------------------------------------
+
+  Memory set to  55.879 GiB by Python driver.
+
+*** tstart() called on ds10
+*** at Wed Mar 14 12:20:15 2018
+
+   => Loading Basis Set <=
+
+    Name: AUG-CC-PVTZ
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1, 9, 17                      entry N          line   281 file /theoryfs2/ds/schieber/Gits/mspsi4/objdir/stage/usr/local/psi4/share/psi4/basis/aug-cc-pvtz.gbs 
+    atoms 2-3, 5-6, 10-11, 13-14, 18-19 entry C          line   235 file /theoryfs2/ds/schieber/Gits/mspsi4/objdir/stage/usr/local/psi4/share/psi4/basis/aug-cc-pvtz.gbs 
+    atoms 4, 7-8, 12, 15-16, 20         entry O          line   327 file /theoryfs2/ds/schieber/Gits/mspsi4/objdir/stage/usr/local/psi4/share/psi4/basis/aug-cc-pvtz.gbs 
+    atoms 21-39                         entry H          line    36 file /theoryfs2/ds/schieber/Gits/mspsi4/objdir/stage/usr/local/psi4/share/psi4/basis/aug-cc-pvtz.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+            by Justin Turney, Rob Parrish, Andy Simmonett
+                             and Daniel Smith
+                              RHF Reference
+                       64 Threads,  57220 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+           N          1.351848201903     3.618071616974     3.042782948432    14.003074004780
+           C          0.578848201903     2.690071616974     2.252782948432    12.000000000000
+           C         -0.329151798097     3.466071616974     1.301782948432    12.000000000000
+           O         -1.431151798097     3.852071616974     1.652782948432    15.994914619560
+           C         -0.227151798097     1.816071616974     3.226782948432    12.000000000000
+           C         -0.958151798097     0.687071616974     2.561782948432    12.000000000000
+           O         -1.038151798097     0.632071616974     1.320782948432    15.994914619560
+           O         -1.512151798097    -0.129928383026     3.297782948432    15.994914619560
+           N          0.132848201903     0.228071616974    -5.021217051568    14.003074004780
+           C         -0.047151798097    -0.074928383026    -3.610217051568    12.000000000000
+           C          1.280848201903    -0.379928383026    -2.931217051568    12.000000000000
+           O          1.728848201903    -1.516928383026    -2.892217051568    15.994914619560
+           C         -1.016151798097    -1.253928383026    -3.500217051568    12.000000000000
+           C         -1.515151798097    -1.489928383026    -2.091217051568    12.000000000000
+           O         -0.875151798097    -1.045928383026    -1.131217051568    15.994914619560
+           O         -2.543151798097    -2.150928383026    -1.939217051568    15.994914619560
+           N          1.831848201903    -0.626928383026     0.103782948432    14.003074004780
+           C          1.682848201903    -1.453928383026     1.291782948432    12.000000000000
+           C          1.570848201903    -2.922928383026     0.935782948432    12.000000000000
+           O          1.385848201903    -3.771928383026     1.832782948432    15.994914619560
+           H          0.905848201903     4.164071616974     3.710782948432     1.007825032070
+           H          1.235848201903     2.009071616974     1.664782948432     1.007825032070
+           H         -0.938151798097     2.450071616974     3.792782948432     1.007825032070
+           H          0.503848201903     1.360071616974     3.931782948432     1.007825032070
+           H         -1.429151798097    -0.123928383026     4.258782948432     1.007825032070
+           H          0.585848201903    -0.404928383026    -5.607217051568     1.007825032070
+           H         -0.550151798097     0.769071616974    -3.084217051568     1.007825032070
+           H         -0.550151798097    -2.162928383026    -3.921217051568     1.007825032070
+           H         -1.911151798097    -0.980928383026    -4.103217051568     1.007825032070
+           H         -0.537151798097    -1.654928383026    -0.475217051568     1.007825032070
+           H          1.039848201903    -0.054928383026    -0.207217051568     1.007825032070
+           H          0.740848201903    -1.194928383026     1.806782948432     1.007825032070
+           H          2.517848201903    -1.258928383026     1.992782948432     1.007825032070
+           H          2.371848201903     3.593071616974     3.034782948432     1.007825032070
+           H          0.020848201903     3.589071616974     0.265782948432     1.007825032070
+           H         -0.327151798097     1.032071616974    -5.448217051568     1.007825032070
+           H          1.785848201903     0.458071616974    -2.429217051568     1.007825032070
+           H          2.759848201903    -0.478928383026    -0.294217051568     1.007825032070
+           H          1.549848201903    -3.171928383026    -0.135217051568     1.007825032070
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.01135  B =      0.00596  C =      0.00509 [cm^-1]
+  Rotational constants: A =    340.34658  B =    178.57705  C =    152.51078 [MHz]
+  Nuclear repulsion = 1638.269612368452044
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 156
+  Nalpha       = 78
+  Nbeta        = 78
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is DF.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-06
+  Density threshold  = 1.00e-06
+  Integral threshold = 0.00e+00
+
+  ==> Primary Basis <==
+
+  Basis Set: AUG-CC-PVTZ
+    Blend: AUG-CC-PVTZ
+    Number of shells: 451
+    Number of basis function: 1357
+    Number of Cartesian functions: 1575
+    Spherical Harmonics?: true
+    Max angular momentum: 3
+
+   => Loading Basis Set <=
+
+    Name: (AUG-CC-PVTZ AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1, 9, 17                      entry N          line   224 file /theoryfs2/ds/schieber/Gits/mspsi4/objdir/stage/usr/local/psi4/share/psi4/basis/aug-cc-pvtz-jkfit.gbs 
+    atoms 2-3, 5-6, 10-11, 13-14, 18-19 entry C          line   162 file /theoryfs2/ds/schieber/Gits/mspsi4/objdir/stage/usr/local/psi4/share/psi4/basis/aug-cc-pvtz-jkfit.gbs 
+    atoms 4, 7-8, 12, 15-16, 20         entry O          line   286 file /theoryfs2/ds/schieber/Gits/mspsi4/objdir/stage/usr/local/psi4/share/psi4/basis/aug-cc-pvtz-jkfit.gbs 
+    atoms 21-39                         entry H          line    70 file /theoryfs2/ds/schieber/Gits/mspsi4/objdir/stage/usr/local/psi4/share/psi4/basis/aug-cc-pvtz-jkfit.gbs 
+
+  ==> Pre-Iterations <==
+
+   -------------------------------------------------------
+    Irrep   Nso     Nmo     Nalpha   Nbeta   Ndocc  Nsocc
+   -------------------------------------------------------
+     A       1357    1357       0       0       0       0
+   -------------------------------------------------------
+    Total    1357    1357      78      78      78       0
+   -------------------------------------------------------
+
+  ==> Integral Setup <==
+
